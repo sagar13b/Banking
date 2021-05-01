@@ -30,3 +30,9 @@ def register_manager(request):
             return render(request,'registermanager.html',{'m':'Password did not match'})
     else: #When we normally open url
         return render(request,'registermanager.html')
+
+def manager_login(request):
+    if request.method == 'POST':
+        pass
+    else:
+        return render(request,'')
