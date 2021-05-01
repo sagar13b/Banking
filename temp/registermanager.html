@@ -1,0 +1,21 @@
+<form method="POST" action="{% url 'rm' %}" enctype="multipart/form-data">
+    {% csrf_token %}
+    <label>Name</label>
+    <input type="text" name="f1"><br/>
+    <label>Email</label>
+    <input type="email" name="f2"><br/>
+    <label>PHone</label>
+    <input type="number" name="f3"><br/>
+    <label>Profile Picture</label>
+    <input type="file" name="f4"><br/>
+    <label>address</label>
+    <input type="text" name="f5"><br/>
+    <label>Branch</label>
+    <input type="text" name="f6"><br/>
+    <label>Password</label>
+    <input type="password" name="f7"><br/>
+    <label>Re Enter Password</label>
+    <input type="password" name="f8"><br/>
+    <button type="submit">Create Manager</button>
+</form>
+<h1>{{ m }}</h1>

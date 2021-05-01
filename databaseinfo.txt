@@ -1,0 +1,58 @@
+1.  Table User
+-> name
+-> email
+-> password
+-> phone number
+-> profile picture
+-> address
+-> is_manager
+-> is_casier
+-> account_creation_date
+
+2.  Client
+-> interest_rate
+-> account number
+-> account balance
+-> net banking
+-> mobile banking
+-> credit card
+-> account_created_by
+-> client_object
+
+3.  Loan
+-> client_object
+-> loan_amount
+-> loan_date
+-> loan_detail
+-> loan_interest
+
+4. Loan amount statement
+-> loan_model
+-> amount
+-> date
+-> user_model(casier)
+-> increase_or_decrease
+
+5. Client Statement
+-> user_model(client)
+-> name (self/others)
+-> reason
+-> amount
+-> withdraw_or_deposit
+-> entered_by (user_model->casier)
+
+6. Manager Details
+-> branch
+-> user_model(manager)
+-> salary
+
+7. Casier Details
+-> user_model(casier)
+-> user_model(manager)
+-> salary
+
+8. Salary Payment
+-> user_model
+-> date
+-> salary
+
